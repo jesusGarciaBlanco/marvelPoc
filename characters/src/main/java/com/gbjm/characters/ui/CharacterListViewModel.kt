@@ -1,4 +1,6 @@
 package com.gbjm.characters.ui
 
-class CharacterListViewModel {
+import androidx.lifecycle.ViewModel
+
+class CharacterListViewModel : ViewModel() {
 }

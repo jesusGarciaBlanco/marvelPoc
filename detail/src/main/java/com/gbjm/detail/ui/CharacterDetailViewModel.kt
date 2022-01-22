@@ -1,4 +1,6 @@
 package com.gbjm.detail.ui
 
-class CharacterDetailViewModel {
+import androidx.lifecycle.ViewModel
+
+class CharacterDetailViewModel: ViewModel() {
 }

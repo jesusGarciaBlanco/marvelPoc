@@ -6,7 +6,7 @@ import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModel
-import dagger.android.support.DaggerAppCompatActivity
+import dagger.android.DaggerActivity
 
 /**
  * BaseActivity is the base implementation for all activities providing support for the inner
@@ -16,7 +16,7 @@ import dagger.android.support.DaggerAppCompatActivity
  * @param DB the data binding class
  *
  */
-abstract class BaseActivity<VM : ViewModel, DB : ViewDataBinding> : DaggerAppCompatActivity() {
+abstract class BaseActivity<VM : ViewModel, DB : ViewDataBinding> : DaggerActivity() {
 
     /**
      * The data binding
