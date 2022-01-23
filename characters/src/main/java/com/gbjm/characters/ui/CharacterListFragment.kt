@@ -16,6 +16,8 @@ import com.gbjm.characters.R
 import com.gbjm.characters.databinding.FragmentListBinding
 import com.gbjm.characters.ui.adapter.CharacterListAdapter
 import com.gbjm.characters.ui.entity.UiCharacterRow
+import com.gbjm.navigation.NavigationFlow
+import com.gbjm.navigation.ToFlowNavigable
 import javax.inject.Inject
 
 class CharacterListFragment : BaseFragment<CharacterListViewModel, FragmentListBinding>() {
@@ -107,6 +109,7 @@ class CharacterListFragment : BaseFragment<CharacterListViewModel, FragmentListB
         listAdapter.set(list)
         listAdapter.listener(object : CharacterListAdapter.CharacterListener {
             override fun onCharacterClicked(character: UiCharacterRow) {
+                (requireActivity() as ToFlowNavigable).navigateToFlow(NavigationFlow.DetailsFlow(character.id))
             }
         })
         val layoutManager = recycler.layoutManager

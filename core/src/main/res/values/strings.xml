@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Marvelpoc</string>
+
+    <string name="comics">comics</string>
+    <string name="series">series</string>
+    <string name="urls">urls</string>
+    <string name="events">events</string>
+    <string name="stories">stories</string>
+
+    <!--  Error messages  -->
+    <string name="no_network">No network</string>
+    <string name="server_error">Server error</string>
+    <string name="client_error">Client error</string>
+    <string name="forbidden">Forbidden</string>
+    <string name="unknown_error">unknown error</string>
+    <string name="not_found">not found</string>
+    <string name="canceled">canceled</string>
+</resources>
