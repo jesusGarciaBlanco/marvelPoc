@@ -50,15 +50,14 @@ class CharacterListAdapter : RecyclerView.Adapter<CharacterListAdapter.ListViewH
 
         override fun bind(item: UiCharacterRow) {
             Picasso.get().cancelRequest(image)
-            if (!item.image.isNullOrEmpty()) {
-               image?.let {
-                    Picasso.get().isLoggingEnabled = true
-                    Picasso.get()
-                        .load(item.image)
-                        .placeholder(R.drawable.place_holder)
-                        .error(R.drawable.image_error)
-                        .into(it)
-                }
+            if (item.image.isNotEmpty()) {
+
+                Picasso.get().isLoggingEnabled = true
+                Picasso.get()
+                    .load(item.image)
+                    .placeholder(R.drawable.place_holder)
+                    .error(R.drawable.image_error)
+                    .into(image)
             } else {
                 image.setImageResource(R.drawable.image_error)
             }
