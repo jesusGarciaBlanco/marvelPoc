@@ -22,7 +22,7 @@ class DomainModule {
         return GetAllCharactersUseCase(repository)
     }
 
-    @Singleton @Provides fun providesGetCharacterByIdUseCase(repository: CharacterListRepository): com.gbjm.detail.usecase.GetCharacterByIdUseCase {
+    @Singleton @Provides fun providesGetCharacterByIdUseCase(repository: CharacterListRepository): GetCharacterByIdUseCase {
         return GetCharacterByIdUseCase(repository)
     }
 }
