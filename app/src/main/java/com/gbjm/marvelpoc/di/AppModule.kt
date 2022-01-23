@@ -9,7 +9,9 @@ import javax.inject.Singleton
 /**
  * App level dependencies
  */
-@Module
+@Module(
+    includes = [NetworkServiceModule::class]
+)
 open class AppModule{
 
     @Provides
