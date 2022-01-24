@@ -35,6 +35,6 @@ a process death. Every logic about navigation is encapsulated in this module.
 This module has no dependencies with other modules.
 
 --------------------------------------------------------------------------------------------
-If I would have more time I would implemented more unit and instrumented tests using mockwebserver to mock
+If I had more time I would have implemented more unit and instrumented tests using mockwebserver to mock
 server responses and I would migrate from LiveData to Flow and from Dagger 2 to Hilt.
 
