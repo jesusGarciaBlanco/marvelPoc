@@ -41,8 +41,8 @@ class CharacterDetailMapper @Inject constructor(
             headerDetail,
             comicsList,
             seriesList,
-            storiesList,
-            eventsList
+            eventsList,
+            storiesList
         )
     }
 }
